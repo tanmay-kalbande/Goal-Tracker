@@ -1,4 +1,4 @@
-<h1 align="center"># Goal Tracker Web App</h1>
+<h1 align="center">Goal Tracker Web App</h1>
 
 <p align="center">
   <img src="images/goal.png" alt="Goal Tracker Logo" width="80">
@@ -40,4 +40,4 @@ If you have any questions or suggestions, please don't hesitate to contact us at
 
 Made with ♥️ to help you crush your goals!
 
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=tanmay-kalbande-goal-tracker-web-app&left_color=gold&right_color=556b2f)
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=tanmay-kalbande-goal-tracker-web-app&left_color=crimson&right_color=008080)
