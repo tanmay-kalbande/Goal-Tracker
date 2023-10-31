@@ -1,6 +1,8 @@
-# Goal Tracker Web App
+<h1 align="center"># Goal Tracker Web App</h1>
 
-![Goal Tracker](images/goal.png)
+<p align="center">
+  <img src="images/goal.png" alt="Goal Tracker Logo" width="80">
+</p>
 
 Welcome to Goal Tracker – the perfect tool to help you achieve your goals one day at a time!
 
@@ -37,3 +39,5 @@ If you have any questions or suggestions, please don't hesitate to contact us at
 ---
 
 Made with ♥️ to help you crush your goals!
+
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=tanmay-kalbande-goal-tracker-web-app&left_color=gold&right_color=556b2f)
