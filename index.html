@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Tracker</title>
+    <link rel="icon" type="image/png" href="images/target.png"> <!-- Favicon -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/goal.png" alt="Goal Logo" width="100"> <!-- Logo -->
+            <h1>Goal Tracker</h1>
+        </div>
+        <div class="progress">
+            <div class="progress-display">
+                <span id="progress">0</span>
+                <span>days tracked</span>
+            </div>
+            <button id="increment" aria-label="Add day tracked">+1 Day Tracked</button>
+            <button id="reset" aria-label="Reset tracker">Reset Tracker</button>
+        </div>
+        <div id="warning" class="warning">You can only increment once every 24 hours, starting from midnight. Don't give up!</div>
+        <div class="footer">
+            <p>Made with ♥️ to help you crush your goals!</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

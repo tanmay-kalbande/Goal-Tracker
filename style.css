@@ -1,0 +1,214 @@
+/* Updated CSS with a new color palette and text effects */
+:root {
+    --primary: #2ecc71;
+    --secondary: #212325;
+    --text-color: #333; /* Dark text color */
+    --bg-color: #ecf0f1; /* Light gray background */
+}
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set up font styles and general styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right bottom, #FCF5ED, #FFFBF5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2); /* Increased shadow for 3D effect */
+    border-radius: 15px; /* Increased border-radius for a boxy look */
+    margin: 10px; /* Increased margin */
+}
+
+h1 {
+    font-size: 2.5rem; /* Increase the font size to 2.5rem or any value you prefer */
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.progress {
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress-display {
+    background: var(--primary);
+    color: #fff;
+    border-radius: 10px; /* Reduced border-radius for a smaller display box */
+    padding: 0.3rem 0.6rem; /* Reduced padding for a smaller display box */
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); /* Text shadow effect */
+    position: relative;
+    z-index: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 10px; /* Increased margin */
+}
+
+.progress-display:before {
+    content: "";
+    background: linear-gradient(
+        45deg,
+        #ff0000,
+        #ff7300,
+        #fffb00,
+        #48ff00,
+        #00ffd5,
+        #002bff,
+        #7a00ff,
+        #ff00c8,
+        #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-progress-display 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes glowing-progress-display {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.progress-display:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+button {
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+    border-radius: 10px; /* Increased border-radius for button */
+    cursor: pointer;
+    border: none;
+    transition: 0.2s ease-in-out;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--secondary); /* Use the secondary color for the button background */
+    color: #fff; /* Text color for the button */
+    border: none;
+    outline: none;
+}
+
+.button:before {
+    content: "";
+    background: linear-gradient(
+        45deg,
+        #ff0000,
+        #ff7300,
+        #fffb00,
+        #48ff00,
+        #00ffd5,
+        #002bff,
+        #7a00ff,
+        #ff00c8,
+        #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes glowing-button {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.button:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+
+
+.warning {
+    background: #f8d7da;
+    color: #842029;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    border-radius: 10px; /* Increased border-radius for warning */
+    display: none;
+}
+
+.footer {
+    color: #666;
+}
+
+/* Media Query for responsive design */
+@media (max-width: 600px) {
+    .container {
+        max-width: 90%;
+    }
+    h1 {
+        font-size: 2.1rem;
+    }
+}
